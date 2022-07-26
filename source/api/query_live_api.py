@@ -4,7 +4,7 @@ import json
 # import pprint
 
 person = {
-        "age": 46,
+        "buying": high,
         "workclass": 'Private',
         "fnlwgt": 364548,
         "education": 'Bachelors',
@@ -21,7 +21,7 @@ person = {
     }
 
 #url = "http://127.0.0.1:8000"
-url = "https://machine-learn-app.herokuapp.com"
+url = "https://machine-learn2-app.herokuapp.com/"
 response = requests.post(f"{url}/predict",
                          json=person)
 
