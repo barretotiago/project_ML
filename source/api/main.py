@@ -8,6 +8,7 @@ import os
 import wandb
 import sys
 from source.api.pipeline import FeatureSelector, CategoricalTransformer, NumericalTransformer
+from source.api.model import df_to_dataset, get_normalization_layer
 
 # global variables
 setattr(sys.modules["__main__"], "FeatureSelector", FeatureSelector)
