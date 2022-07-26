@@ -12,7 +12,7 @@ para tomada de decisão e tem como objetivo avaliar carros de acordo com a aceit
 O modelo de desenvolvimento de projeto seguiu a estrutura MLOPs proposta pelo prof. Dr. Ivanovitch Silva [https://github.com/ivanovitchm/ppgeecmachinelearning/blob/main/images/workflow.png]
 
 ![image](https://github.com/ivanovitchm/ppgeecmachinelearning/blob/main/images/workflow.png?raw=true);
-![The Ivanovith's pipeline model.](../images/ivanovicth_workflow.png);
+
 
 ## *Intended Use*: 
 Utilização de métodos de machine learning para desenvolvimento dos resultados. Foram utilizados aspectos de modelos já utilizados no repositório "my_first_action". A estruturação envolveu: Fecth data, EDA, Preprocessing, Data check, Data Segregation, Train and Test. A complementação do processo consistiu na utilização do [TensorFlow](https://www.tensorflow.org/), no processo de treinamento da rede. 
