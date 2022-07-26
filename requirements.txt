@@ -7,3 +7,6 @@ fastapi
 pydantic
 uvicorn
 tensorflow-cpu
+scipy
+numpy 
+scikit-learn
