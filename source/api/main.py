@@ -10,18 +10,13 @@ import sys
 from source.api.pipeline import FeatureSelector, CategoricalTransformer, NumericalTransformer
 from source.api.model import df_to_dataset, get_normalization_layer
 
-# global variables
-setattr(sys.modules["__main__"], "FeatureSelector", FeatureSelector)
-setattr(sys.modules["__main__"], "CategoricalTransformer", CategoricalTransformer)
-setattr(sys.modules["__main__"], "NumericalTransformer", NumericalTransformer)
-
 # name of the model artifact
 artifact_model_name = "decision_tree/model_export:latest"
 
-# initiate the wandb project
+# initiate teh wandb project
 run = wandb.init(project="decision_tree",job_type="api")
 
-# create the api
+# Create the API
 app = FastAPI()
 
 # declare request example data using pydantic
@@ -64,7 +59,7 @@ async def get_inference(person: Person):
     
     # Download inference artifact
     model_export_path = run.use_artifact(artifact_model_name).file()
-    pipe = joblib.load(model_export_path)
+    model = joblib.load(model_export_path)
     
     # Create a dataframe from the input feature
     # note that we could use pd.DataFrame.from_dict
@@ -73,6 +68,6 @@ async def get_inference(person: Person):
     df = pd.DataFrame([person.dict()])
 
     # Predict test data
-    predict = pipe.predict(df)
+    predict = model.predict(ds)  
 
-    return "acc" if else "unacc" if else "good" else "vgood" 
+    return "unacc" if predict[0] <= 0.5 else "acc"
