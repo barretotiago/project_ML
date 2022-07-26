@@ -1,4 +1,4 @@
-##Model Card (https://arxiv.org/pdf/1810.03993.pdf)
+#Model Card (https://arxiv.org/pdf/1810.03993.pdf)
 
 *Model Details*: O projeto apresenta o uso de Machine Learning no treinamento de um modelo de classificação focado na avaliação de carros. 
 O modelo foi retirado do Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/Car+Evaluation) que é um sistema especialista 
