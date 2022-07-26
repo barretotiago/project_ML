@@ -11,7 +11,7 @@ para tomada de decisão e tem como objetivo avaliar carros de acordo com a aceit
 ## *Pipeline*:
 O modelo de desenvolvimento de projeto seguiu a estrutura MLOPs proposta pelo prof. Dr. Ivanovitch Silva [https://github.com/ivanovitchm/ppgeecmachinelearning/blob/main/images/workflow.png]
 
-
+![image](https://github.com/ivanovitchm/ppgeecmachinelearning/blob/main/images/workflow.png?raw=true);
 ![The Ivanovith's pipeline model.](../images/ivanovicth_workflow.png);
 
 ## *Intended Use*: 
