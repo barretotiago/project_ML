@@ -69,5 +69,6 @@ async def get_inference(person: Person):
 
     # Predict test data
     predict = model.predict(ds)  
+    ds = df_to_dataset(df,shuffle=False)
 
     return "unacc" if predict[0] <= 0.5 else "acc"
