@@ -37,4 +37,4 @@ jobs:
 
       # Runs tests
       - name: Testing API
-        run: pytest source/api -vv -s
+        run: pytest source2/api -vv -s
